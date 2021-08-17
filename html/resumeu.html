@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        .a4sheet{
+            width:800px;
+            height:1808px;
+        }
+        .header{
+            height:100px;
+            background-color:lightblue;
+            display:flex;
+            justify-content:space-between;
+            padding:20px;
+        }
+        .header-link{
+            cursor:pointer;
+            height:auto;
+        }
+        .header-link label:hover{
+            border:1px dotted black;
+        }
+        .header-profile{
+            text-align:right;
+            cursor:pointer;
+        }
+        .header-profile label:hover{
+            border:1px dotted black;
+        }
+        .person-name{
+            font-size:30px;
+        }
+        .main{
+            margin:10px;
+            box-sizing:border-box;
+        }
+        
+        .card-header{
+            color:lightblue;
+            font-size: 20px;
+        }
+        .headers-input{
+            width:98%;
+            border:0px;
+            word-wrap:break-word;
+        }
+        .description{
+            width:98%;
+            height:50px;
+            resize:none;
+            overflow:auto;
+            border:0px;
+            word-wrap:break-word;
+        }
+        .main:hover,.description:hover,.headers-input:hover{
+            border:1px dotted black;
+        }
+    </style>
+</head>
+<body>
+    <div class="a4sheet">
+        <div class="header">
+            <div class="header-link">
+                <label>Emailid123@gmail.com</label><br>
+            </div>
+            <div class="header-profile">
+                <label class="person-name">John Danney Sam Raj Mohan</label><br>
+                <label>Education Qualification</label><br>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left-option">
+                <button>Add</button>
+                <button>Edit</button>
+                <button>Copy</button>
+            </div>
+            <div class="card-template">
+                <div class="card-header">
+                    <input class="headers-input" type="text" placeholder="Enter Text" \>
+                </div>
+                <hr>
+                <div class="card-subheader">
+                    <input class="headers-input" type="text" placeholder="Enter Text" \>
+                </div>
+                <div class="card-content">
+                    <textarea class="description" placeholder="Add Large Content ..."></textarea>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

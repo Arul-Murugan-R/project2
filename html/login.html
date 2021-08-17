@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            margin:0;
+            color:#6a6f8c;
+            background:#c8c8c8;
+            font: 'Open Sans',sans-serif;
+        }
+        .login-center{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            padding:30px;
+            width:270px;
+            background-color:lightblue;
+        }
+        .login-header{
+            font-weight: bold;
+            border-bottom:1px solid orange;
+            margin:30px 20px;
+            font-size: 25px;
+        }
+        .username,.password{
+            margin:20px 0px;
+        }
+        .input-class{
+            border-radius: 50px;
+            border:1px solid rgba(255,255,255,0.2);
+            padding:8px 20px;
+            width:230px;
+            outline:none;
+            background:rgba(255,255,255,.3);
+            backface-visibility:hidden;
+        }
+        .input-class:focus{
+            box-sizing: 0px 0px 5px 3px blue;
+        }
+        .login-button{
+            padding:12px 37px;
+            border:0px;
+            border-radius:50px;
+            margin-left:25px;
+            cursor:pointer;
+            width:200px;
+            background-color:transparent;
+            border:1px solid rgba(255,255,255,1);
+            transition-duration:0.6s;
+            color:#6a6f8c;
+        }
+        .login-button:hover{
+            background-color:orange;
+            color:white;
+            border:0px;
+        }
+        #forget{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <label style="float:right;margin:20px;">Return to Home Page<a href="index.html">HOME</a></label>
+    <div class="login-center">
+        <label class="login-header">Login</label>
+        <div class="username">
+            <label><small>USERNAME</small></label><br>
+            <input type="text" class="input-class" \>
+        </div>
+        <div class="password">
+            <label><small>PASSWORD</small></label><br>
+            <input type="password" class="input-class" \>
+        </div>
+        <input type="checkbox" \><label>REMEMBER</label>
+        <label id="forget" ><a href="#">Forget Password?</a></label><br>
+        <button class="login-button"><center>Login</center></button><br>
+        <label><center>--OR login using--</center></label>
+        <button class="login-button"><center>By Facebook</center></button><br><br>
+        <button class="login-button"><center>By Google</center></button><br><br>
+        <label><center>Don't have an a account?</center></label><br>
+        <label><center><a href="signup.html">SIGNUP</a></center></label>
+    </div>
+</body>
+</html>
