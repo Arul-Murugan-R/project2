@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        
+        .signup-center{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            padding:30px;
+            width:270px;
+            box-shadow: 0px 0px 10px 3px orange;
+        }
+        .signup-header{
+            border-bottom: 2px solid orange;
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+        .username,.password{
+            margin:10px 0px;
+        }
+        .input-class{
+            padding:10px 20px;
+            border-radius: 25px;
+            outline:none;
+            border:1px solid rgba(0,0,0,0.4);
+            width:220px;
+
+        }
+        .signup-button{
+            background-color:orange;
+            border-radius: 25px;
+            padding:10px 20px;
+            cursor:pointer;
+            width:250px;
+            border:1px solid rgba(0,0,0,0.4);
+            color:white;
+            margin:10px;
+        }
+        a{
+            text-decoration:none;
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <label style="float:right;margin:20px;"><a href="index.html">HOME</a></label>
+    <div class="signup-center">
+        <form action="#">
+        <label class="signup-header">Sign Up</label><br><br>
+        <div class="username">
+            <label><small>USERNAME</small></label><br>
+            <input type="text" class="input-class" \>
+        </div>
+        <div class="username">
+            <label><small>EMAIL ID</small></label><br>
+            <input type="email" class="input-class" \>
+        </div>
+        <div class="password">
+            <label><small>PASSWORD</small></label><br>
+            <input type="password" class="input-class" \>
+        </div>
+        <div class="password">
+            <label><small>CONFIRM PASSWORD</small></label><br>
+            <input type="password" class="input-class" \>
+        </div>
+        <button class="signup-button"><center>Sign Up</center></button>
+        <label><center>--OR signup using--</center></label>
+        <button class="signup-button"><center>By Facebook</center></button>
+        <button class="signup-button"><center>By Google</center></button>
+        <label><center>Do you have an a account?</center></label>
+        <label><center><a href="loginf.html">LOGIN</a></center></label>
+    </form>
+    </div>
+</body>
+</html>
